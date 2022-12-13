@@ -41,37 +41,42 @@ CREATE SCHEMA data_mart;
 python3 app/create_tb_raw.py
 ```
 
-3. Create Index and Foreign key on table raw
-```bash
-python3 app/create_index_tb_raw.py
-```
-
-4.Insert data from csv to table raw
+3.Insert data from csv to table raw
 ```bash
 python3 app/insert_data_raw.py
 ```
 
-5.Create Table Clean
+4. Alter Columns to add new column in table
+```bash
+python3 app/alter_table_raw.py
+```
+
+5. Create Index and Foreign key on table raw
+```bash
+python3 app/create_index_tb_raw.py
+```
+
+6.Create Table Clean
 ```bash
 python3 app/create_tb_clean.py
 ```
 
-6.Create Index on table clean
+7.Create Index on table clean
 ```
 python3 app/create_index_tb_clean.py
 ```
 
-7.Insert data to table clean
+8.Insert data to table clean
 ```bash
 python3 app/Insert_data_clean.py
 ```
 
-8. Create table Mart
+9. Create table Mart
 ```bash
 python3 app/create_tb_mart.py
 ```
 
-9. Insert data to table mart
+10. Insert data to table mart
 ```bash
 python3 app/Insert_data_mart.py
 ```
