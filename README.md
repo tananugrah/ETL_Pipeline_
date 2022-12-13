@@ -1,10 +1,30 @@
 # ETL_Pipeline
 
+
 ## Program Flow
 
-![customers - public erd drawio (1)](https://user-images.githubusercontent.com/22236787/207084807-4df2db8e-6d69-4a20-801f-b2e958fc1613.png)
+![customers - public erd drawio (2)](https://user-images.githubusercontent.com/22236787/207203428-c4c33ca7-e286-4176-b244-bb49f8ca8abe.png)
 
-## Database Raw
+
+extract data from csv and load to data_raw ,then data from data_raw clean data, remove duplicate data, set data type and load to data_clean. and then from data_clean select the required tables and columns and load them into data_mart. 
+
+## Data Raw (Schema : integration)
+
+
+![warehouse - integration](https://user-images.githubusercontent.com/22236787/207201985-2af3be71-ba4d-4754-b4d2-68f783a16a23.png)
+
+
+## Data Clean (Schema : public)
+
+
+![warehouse - public](https://user-images.githubusercontent.com/22236787/207202051-bfde3736-75e9-4cdc-b073-aaebf597e4c6.png)
+
+
+## Data Mart Customers Orders (Schema : data_mart)
+
+
+![warehouse - data_mart](https://user-images.githubusercontent.com/22236787/207202161-39aa339a-4023-4bf4-aacc-e7b3fc53fbd3.png)
+
 
 
 ## To Run Program
@@ -57,4 +77,5 @@ python3 app/Insert_data_mart.py
 ```
 
 
+LinkedIn : https://www.linkedin.com/in/tan-anugrah-22a225240/
 
